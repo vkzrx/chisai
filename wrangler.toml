@@ -1,0 +1,8 @@
+name = "shorty"
+main = "src/app.ts"
+compatibility_date = "2023-10-12"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "shorty"
+database_id = "e9bfaf5d-2321-4e33-8e81-82f4c4bab779"

@@ -1,0 +1,33 @@
+{
+  "name": "shorty",
+  "module": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "bun build --target=bun src/app.ts --outdir=dist",
+    "deploy": "wrangler deploy --minify src/app.ts",
+    "format": "biome format . --write",
+    "format:check": "biome format .",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint . --apply",
+    "check": "biome check .",
+    "check:fix": "biome check . --apply-unsafe",
+    "ci": "biome ci ."
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.1.9",
+    "better-sqlite3": "^9.0.0",
+    "hono": "^3.7.2",
+    "nanoid": "^5.0.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.3.0",
+    "@cloudflare/workers-types": "^4.20230914.0",
+    "bun-types": "latest",
+    "wrangler": "^3.13.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

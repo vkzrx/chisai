@@ -6,7 +6,7 @@
     "dev": "wrangler dev",
     "build": "bun build --target=bun src/app.ts --outdir=dist",
     "build:css": "tailwindcss -i ./src/app.css -o ./dist/app.css",
-    "deploy": "wrangler deploy --minify src/app.ts",
+    "deploy": "wrangler deploy --minify",
     "format": "biome format . --write",
     "format:check": "biome format .",
     "lint": "biome lint .",

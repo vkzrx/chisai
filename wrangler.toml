@@ -1,11 +1,8 @@
 name = "chisai"
-main = "src/app.tsx"
+main = "src/main.tsx"
 compatibility_date = "2023-10-12"
-
-[site]
-bucket = "./dist"
 
 [[d1_databases]]
 binding = "DB"
 database_name = "chisai"
-database_id = "d702ec9b-49c2-40a0-abef-73aadf52b21e"
+database_id = "61fcfad2-7ffc-4604-9731-bec8f8eb3f32"

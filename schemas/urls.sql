@@ -7,3 +7,5 @@ CREATE TABLE IF NOT EXISTS urls (
   clicks INTEGER DEFAULT 0,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 )
+
+CREATE INDEX IF NOT EXISTS urls_shorten_index ON urls (shorten);

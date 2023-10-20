@@ -1,5 +1,6 @@
 import { zValidator } from "@hono/zod-validator";
 import { Hono } from "hono";
+import { handle } from "hono/cloudflare-pages";
 import { HTTPException } from "hono/http-exception";
 import { prettyJSON } from "hono/pretty-json";
 import { nanoid } from "nanoid";
@@ -9,7 +10,7 @@ type Bindings = {
   DB: D1Database;
 };
 
-const api = new Hono<{ Bindings: Bindings }>();
+const api = new Hono<{ Bindings: Bindings }>().basePath("/api");
 
 api.use("*", prettyJSON());
 
@@ -60,4 +61,4 @@ api.post(
   },
 );
 
-export { api };
+export const onRequest = handle(api);

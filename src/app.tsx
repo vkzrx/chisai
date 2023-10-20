@@ -14,7 +14,7 @@ const app = new Hono();
 
 app.route("/api", api);
 
-app.use("/styles/app.css", serveStatic({ path: "./styles/app.css" }));
+app.use("/app.css", serveStatic({ path: "./app.css" }));
 
 app.get(
   "*",
@@ -25,7 +25,7 @@ app.get(
           <title>{props.title}</title>
           <meta charset="UTF-8" />
           <meta name="description" content="Shorty: URL shortener" />
-          <link href="/styles/app.css" rel="stylesheet" />
+          <link href="/app.css" rel="stylesheet" />
         </head>
         <body>{props.children}</body>
       </html>

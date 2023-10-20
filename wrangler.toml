@@ -1,6 +1,9 @@
 name = "shorty"
-main = "src/app.ts"
+main = "src/app.tsx"
 compatibility_date = "2023-10-12"
+
+[site]
+bucket = "./public"
 
 [[d1_databases]]
 binding = "DB"

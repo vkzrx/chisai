@@ -24,7 +24,7 @@ app.get(
         <head>
           <title>{props.title}</title>
           <meta charset="UTF-8" />
-          <meta name="description" content="Shorty: URL shortener" />
+          <meta name="description" content="Chisai: URL shortener" />
           <link href="/app.css" rel="stylesheet" />
         </head>
         <body>{props.children}</body>
@@ -34,7 +34,7 @@ app.get(
 );
 
 app.get("/", (c) => {
-  return c.render(<HomePage name="World" />, { title: "Shorty | Home" });
+  return c.render(<HomePage name="World" />, { title: "Chisai | Home" });
 });
 
 export default app;

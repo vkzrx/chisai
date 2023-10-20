@@ -1,6 +1,6 @@
-## Shorty
+## Chisai
 
-Shorty is a url shortener built using [hono](https://hono.dev) and Cloudflare [D1](https://developers.cloudflare.com/d1), and deployed on a Cloudflare Worker.
+Chisai is a url shortener built using [hono](https://hono.dev) and Cloudflare [D1](https://developers.cloudflare.com/d1), and deployed on a Cloudflare Worker.
 
 ### Getting started
 
